@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | NIKHAT FATMA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a href="index.html" class="logo"><span>&lt;/&gt;</span> NIKHAT FATMA</a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-sub">Email, social links and form</p>
+        <div class="contact-grid">
+          <form onsubmit="handleSubmit(event)">
+            <label for="name">Name</label
+            ><input id="name" type="text" placeholder="Your Name" required />
+            <label for="email">Email</label
+            ><input
+              id="email"
+              type="email"
+              placeholder="your@email.com"
+              required
+            />
+            <label for="phone">Phone</label
+            ><input id="phone" type="tel" placeholder="+91..." />
+            <label for="message">Message</label
+            ><textarea
+              id="message"
+              rows="5"
+              placeholder="Hello..."
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          <div class="card">
+            <h3>Get in touch</h3>
+            <p style="color: var(--muted); margin-top: 10px">
+              Email: fnikhat106@gmail.com<br />GitHub:
+              github.com/Nikhat310<br />LinkedIn: linkedin.com/in/nikhat-fatma-994935401<br />Location:
+              Bhubaneswar, Odisha, India
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer><div class="container">© 2026 Nikhat Fatma</div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

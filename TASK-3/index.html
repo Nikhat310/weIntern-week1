@@ -1,0 +1,173 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 3 - CSS Challenge</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Task 3A - Flexbox Layout</h2>
+<p>3 cards in a row on desktop, stack vertically on mobile</p>
+
+<div class="flex-container">
+  <div class="card">Card 1 - Feature One</div>
+  <div class="card">Card 2 - Feature Two</div>
+  <div class="card">Card 3 - Feature Three</div>
+</div>
+
+<h2>Task 3B - Grid Layout</h2>
+<p>6 grid items using repeat()</p>
+
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+</div>
+
+<h2>Task 3C - Animation</h2>
+<p>Button hover + Card lift + Spinner</p>
+
+<button class="anim-btn">Hover Me</button>
+
+<div class="anim-card">Card Lift Effect</div>
+
+<div class="spinner"></div>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 3 - CSS Challenge | WeIntern</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">CSS<span>Challenge</span></div>
+  <nav>
+    <a href="#flexbox">Flexbox</a>
+    <a href="#grid">Grid</a>
+    <a href="#animation">Animation</a>
+  </nav>
+</header>
+
+<main>
+  <section class="intro">
+    <h1>Week 1 - Task 3: CSS Challenge</h1>
+    <p>Learning Flexbox, Grid and Animations - @WeIntern</p>
+  </section>
+
+  <!-- TASK 3A - FLEXBOX -->
+  <section id="flexbox">
+    <h2>Task 3A - Flexbox Layout</h2>
+    <p>Responsive testimonial / feature-card row using Flexbox - 3 cards in a row on desktop, stacked on mobile.</p>
+    
+    <div class="flex-container">
+      <article class="card">
+        <div class="icon">🚀</div>
+        <h3>Fast Performance</h3>
+        <p>Uses display:flex, justify-content, align-items, gap and flexible widths.</p>
+      </article>
+      <article class="card">
+        <div class="icon">🎨</div>
+        <h3>Modern Design</h3>
+        <p>Row on desktop → Column on mobile via @media (max-width:768px).</p>
+      </article>
+      <article class="card">
+        <div class="icon">💡</div>
+        <h3>Hover Effects</h3>
+        <p>Interaction feedback with transform and box-shadow on hover.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- TASK 3B - GRID -->
+  <section id="grid">
+    <h2>Task 3B - Grid Layout</h2>
+    <p>Gallery / dashboard layout using CSS Grid - 6 items with repeat() function.</p>
+    
+    <div class="grid-container">
+      <div class="grid-item">
+        <h4>Dashboard</h4>
+        <span>Item 1</span>
+      </div>
+      <div class="grid-item">
+        <h4>Analytics</h4>
+        <span>Item 2</span>
+      </div>
+      <div class="grid-item">
+        <h4>Reports</h4>
+        <span>Item 3</span>
+      </div>
+      <div class="grid-item">
+        <h4>Users</h4>
+        <span>Item 4</span>
+      </div>
+      <div class="grid-item">
+        <h4>Settings</h4>
+        <span>Item 5</span>
+      </div>
+      <div class="grid-item">
+        <h4>Support</h4>
+        <span>Item 6</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TASK 3C - ANIMATION -->
+  <section id="animation">
+    <h2>Task 3C - Animation Components</h2>
+    <p>Simple professional animations using transition, transform and keyframes.</p>
+    
+    <div class="animation-wrapper">
+      <div class="anim-box">
+        <h4>1. Button Hover Animation</h4>
+        <button class="anim-btn">Hover Me</button>
+        <small>transition: transform 0.3s</small>
+      </div>
+
+      <div class="anim-box">
+        <h4>2. Card Lift Effect</h4>
+        <div class="anim-card">Hover to Lift</div>
+        <small>transform: translateY(-10px)</small>
+      </div>
+
+      <div class="anim-box">
+        <h4>3. Loading Spinner</h4>
+        <div class="spinner"></div>
+        <small>@keyframes spin</small>
+      </div>
+
+      <div class="anim-box">
+        <h4>4. Fade-in Animation</h4>
+        <div class="fade-box">Fade In Box</div>
+        <small>animation: fadeIn 1s</small>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 CSS Challenge | Built for WeIntern Week 1 | Flexbox + Grid + Animation</p>
+  <div class="footer-links">
+    <a href="#flexbox">Flexbox</a> |
+    <a href="#grid">Grid</a> |
+    <a href="#animation">Animation</a>
+  </div>
+</footer>
+
+</body>
+</html>
