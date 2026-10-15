@@ -226,3 +226,237 @@ footer a {
     align-items: center;
   }
 }
+
+.hero-greeting {
+    color: #a78bfa;
+    font-weight: 600;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.hero-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 24px;
+}
+
+.hero-socials a {
+    color: #b8c2d8;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.hero-socials a:hover {
+    color: #67e8f9;
+}
+
+.card-img {
+    position: relative;
+}
+
+.floating-card {
+    position: absolute;
+    bottom: 25px;
+    left: -20px;
+    padding: 12px 16px;
+    background: #121a2e;
+    color: #f4f6ff;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    font-size: 13px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #4ade80;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.tech-badge {
+    margin-top: 20px;
+    padding: 12px;
+    text-align: center;
+    background: #121a2e;
+    color: #a5b4fc;
+    border: 1px solid rgba(167, 139, 250, 0.25);
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .hero-socials {
+        gap: 16px;
+    }
+
+    .floating-card {
+        left: -8px;
+    }
+}
+/*education section*/
+
+/* ===== Common Content Sections ===== */
+
+.content-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    scroll-margin-top: 80px;
+}
+
+.section-label {
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.content-section h2 {
+    color: #f4f6ff;
+    font-size: clamp(28px, 4vw, 38px);
+    margin-bottom: 24px;
+}
+
+.section-description {
+    color: #a5afc5;
+    max-width: 750px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+/* ===== Education & Experience Cards ===== */
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.info-card {
+    padding: 30px;
+    background: #121a2e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.info-card:hover,
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #a78bfa;
+}
+
+.card-icon {
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.info-card h3,
+.skill-card h3 {
+    color: #f4f6ff;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.card-subtitle {
+    color: #a78bfa;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.info-card p:not(.card-subtitle) {
+    color: #a5afc5;
+    line-height: 1.8;
+}
+
+.card-tag {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    color: #67e8f9;
+    background: rgba(103, 232, 249, 0.08);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ===== Skills ===== */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.skill-card {
+    padding: 28px;
+    background: #121a2e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.skill-list span {
+    padding: 7px 12px;
+    background: #1b2740;
+    border: 1px solid rgba(167, 139, 250, 0.15);
+    border-radius: 7px;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+/* ===== Contact Banner ===== */
+
+.contact-banner {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding: 45px 35px;
+    text-align: center;
+    background: #121a2e;
+    border: 1px solid rgba(167, 139, 250, 0.25);
+    border-radius: 18px;
+}
+
+.contact-banner .section-description {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-banner .btn {
+    margin-top: 10px;
+}
+
+/* ===== Responsive Layout ===== */
+
+@media (max-width: 700px) {
+    .content-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .info-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card,
+    .skill-card {
+        padding: 23px;
+    }
+
+    .contact-banner {
+        padding: 35px 20px;
+    }
+}

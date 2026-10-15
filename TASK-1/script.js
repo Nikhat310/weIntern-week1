@@ -57,3 +57,8 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
     link.style.transform = "translateY(0)";
   });
 });
+const yearElement = document.getElementById("year");
+
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}

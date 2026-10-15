@@ -460,3 +460,243 @@ footer a {
     gap: 18px;
   }
 }
+
+/* Extended SipBrew Sections */
+
+.section-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.center {
+  text-align: center;
+}
+
+.section-description {
+  max-width: 620px;
+  margin: 0 auto 35px;
+  line-height: 1.8;
+  color: #777;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #9b552d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  color: #60351e;
+}
+
+.card img {
+  display: block;
+  margin-bottom: 18px;
+  transition: transform 0.3s ease;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+.menu-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.menu-price .btn {
+  padding: 9px 18px;
+  text-decoration: none;
+}
+
+.offer-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 35px;
+  padding: 35px;
+  background: #f5e8dc;
+  border-radius: 24px;
+}
+
+.offer-banner h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin: 12px 0;
+}
+
+.offer-banner p {
+  line-height: 1.8;
+}
+
+.offer-banner img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gallery-grid img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 18px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: translateY(-5px);
+}
+
+.hours-card {
+  padding: 30px;
+  background: #fff8f1;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.hours-card h3 {
+  margin-bottom: 20px;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e8d8ca;
+}
+
+.hours-row span {
+  color: #666;
+}
+
+.hours-row strong {
+  text-align: right;
+}
+
+.hours-note {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.newsletter-box {
+  max-width: 750px;
+  margin: auto;
+  padding: 35px;
+  text-align: center;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.newsletter-form input:focus {
+  outline: 2px solid #9b552d;
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+#newsletter-message {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+/* Tablet and mobile responsiveness */
+
+@media (max-width: 768px) {
+  .offer-banner {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .offer-banner img {
+    height: 250px;
+  }
+
+  .gallery-grid img {
+    height: 220px;
+  }
+
+  .hours-row {
+    align-items: flex-start;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid img {
+    height: 250px;
+  }
+
+  .hours-card,
+  .newsletter-box {
+    padding: 22px;
+  }
+
+  .hours-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .hours-row strong {
+    text-align: left;
+  }
+}
+
