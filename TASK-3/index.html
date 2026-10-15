@@ -1,132 +1,471 @@
-
-
-
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Task 3 - CSS Challenge | WeIntern</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore a modern CSS Challenge project demonstrating Flexbox, CSS Grid, responsive layouts, and animations. Built for WeIntern Week 1.">
+
+    <meta name="theme-color" content="#101426">
+
+    <title>CSS Challenge | WeIntern</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="logo">CSS<span>Challenge</span></div>
-  <nav>
-    <a href="#flexbox">Flexbox</a>
-    <a href="#grid">Grid</a>
-    <a href="#animation">Animation</a>
-  </nav>
-</header>
+    <!-- =========================
+         HEADER / NAVBAR
+    ========================== -->
 
-<main>
-  <section class="intro">
-    <h1>Week 1 - Task 3: CSS Challenge</h1>
-    <p>Learning Flexbox, Grid and Animations - @WeIntern</p>
-  </section>
+    <header class="header">
 
-  <!-- TASK 3A - FLEXBOX -->
-  <section id="flexbox">
-    <h2>Task 3A - Flexbox Layout</h2>
-    <p>Responsive testimonial / feature-card row using Flexbox - 3 cards in a row on desktop, stacked on mobile.</p>
-    
-    <div class="flex-container">
-      <article class="card">
-        <div class="icon">🚀</div>
-        <h3>Fast Performance</h3>
-        <p>Uses display:flex, justify-content, align-items, gap and flexible widths.</p>
-      </article>
-      <article class="card">
-        <div class="icon">🎨</div>
-        <h3>Modern Design</h3>
-        <p>Row on desktop → Column on mobile via @media (max-width:768px).</p>
-      </article>
-      <article class="card">
-        <div class="icon">💡</div>
-        <h3>Hover Effects</h3>
-        <p>Interaction feedback with transform and box-shadow on hover.</p>
-      </article>
-    </div>
-  </section>
+        <a href="#home" class="logo" aria-label="CSS Challenge home">
+            CSS<span>Challenge</span>
+        </a>
 
-  <!-- TASK 3B - GRID -->
-  <section id="grid">
-    <h2>Task 3B - Grid Layout</h2>
-    <p>Gallery / dashboard layout using CSS Grid - 6 items with repeat() function.</p>
-    
-    <div class="grid-container">
-      <div class="grid-item">
-        <h4>Dashboard</h4>
-        <span>Item 1</span>
-      </div>
-      <div class="grid-item">
-        <h4>Analytics</h4>
-        <span>Item 2</span>
-      </div>
-      <div class="grid-item">
-        <h4>Reports</h4>
-        <span>Item 3</span>
-      </div>
-      <div class="grid-item">
-        <h4>Users</h4>
-        <span>Item 4</span>
-      </div>
-      <div class="grid-item">
-        <h4>Settings</h4>
-        <span>Item 5</span>
-      </div>
-      <div class="grid-item">
-        <h4>Support</h4>
-        <span>Item 6</span>
-      </div>
-    </div>
-  </section>
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#flexbox">Flexbox</a>
+            <a href="#grid">Grid</a>
+            <a href="#animation">Animations</a>
+        </nav>
 
-  <!-- TASK 3C - ANIMATION -->
-  <section id="animation">
-    <h2>Task 3C - Animation Components</h2>
-    <p>Simple professional animations using transition, transform and keyframes.</p>
-    
-    <div class="animation-wrapper">
-      <div class="anim-box">
-        <h4>1. Button Hover Animation</h4>
-        <button class="anim-btn">Hover Me</button>
-        <small>transition: transform 0.3s</small>
-      </div>
+    </header>
 
-      <div class="anim-box">
-        <h4>2. Card Lift Effect</h4>
-        <div class="anim-card">Hover to Lift</div>
-        <small>transform: translateY(-10px)</small>
-      </div>
 
-      <div class="anim-box">
-        <h4>3. Loading Spinner</h4>
-        <div class="spinner"></div>
-        <small>@keyframes spin</small>
-      </div>
+    <main>
 
-      <div class="anim-box">
-        <h4>4. Fade-in Animation</h4>
-        <div class="fade-box">Fade In Box</div>
-        <small>animation: fadeIn 1s</small>
-      </div>
-    </div>
-  </section>
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
 
-</main>
+        <section class="intro" id="home">
 
-<!-- FOOTER -->
-<footer class="footer">
-  <p>© 2026 CSS Challenge | Built for WeIntern Week 1 | Flexbox + Grid + Animation</p>
-  <div class="footer-links">
-    <a href="#flexbox">Flexbox</a> |
-    <a href="#grid">Grid</a> |
-    <a href="#animation">Animation</a>
-  </div>
-</footer>
+            <p class="hero-badge">
+                ✦ WEINTERN · WEEK 1 PROJECT
+            </p>
+
+            <h1>
+                Master CSS.
+                <br>
+                <span class="hero-highlight">Build Beautiful Websites.</span>
+            </h1>
+
+            <p>
+                Exploring modern layouts, responsive design, and smooth
+                animations through the power of CSS.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#flexbox" class="hero-btn">
+                    Explore Project <span aria-hidden="true">→</span>
+                </a>
+
+                <a href="#grid" class="hero-secondary">
+                    Discover CSS Grid
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+                    <strong>03</strong>
+                    <span>Core Concepts</span>
+                </div>
+
+                <div>
+                    <strong>06</strong>
+                    <span>Grid Components</span>
+                </div>
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Responsive Goal</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INTRODUCTION
+        ========================== -->
+
+        <section class="overview">
+
+            <p class="section-eyebrow">WHAT YOU'LL EXPLORE</p>
+
+            <h2>One Project. Three CSS Skills.</h2>
+
+            <p>
+                A hands-on demonstration of essential CSS techniques
+                used to build modern and responsive web interfaces.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             TASK 3A: FLEXBOX
+        ========================== -->
+
+        <section id="flexbox" class="feature-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">01 / LAYOUT</span>
+
+                <h2>Flexible by Design.</h2>
+
+                <p>
+                    Build flexible layouts that adapt beautifully
+                    to different screen sizes.
+                </p>
+
+            </div>
+
+            <div class="flex-container">
+
+                <article class="card">
+
+                    <div class="icon" aria-hidden="true">🚀</div>
+
+                    <h3>Fast Performance</h3>
+
+                    <p>
+                        Organize content with flexible layouts,
+                        consistent spacing, and efficient CSS.
+                    </p>
+
+                    <span class="card-tag">Flex Properties</span>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="icon" aria-hidden="true">🎨</div>
+
+                    <h3>Modern Design</h3>
+
+                    <p>
+                        Create visually appealing interfaces with
+                        balanced spacing, colors, and typography.
+                    </p>
+
+                    <span class="card-tag">Responsive UI</span>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="icon" aria-hidden="true">💡</div>
+
+                    <h3>Hover Effects</h3>
+
+                    <p>
+                        Add interactive feedback using CSS transforms,
+                        transitions, and subtle shadows.
+                    </p>
+
+                    <span class="card-tag">CSS Transitions</span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TASK 3B: CSS GRID
+        ========================== -->
+
+        <section id="grid" class="grid-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">02 / STRUCTURE</span>
+
+                <h2>Structure with Grid.</h2>
+
+                <p>
+                    Explore a six-item dashboard layout using
+                    CSS Grid and responsive column sizing.
+                </p>
+
+            </div>
+
+            <div class="grid-container">
+
+                <article class="grid-item">
+
+                    <div class="grid-icon" aria-hidden="true">▦</div>
+
+                    <h3>Dashboard</h3>
+
+                    <p>Overview of your workspace.</p>
+
+                    <span>Item 01</span>
+
+                </article>
+
+
+                <article class="grid-item">
+
+                    <div class="grid-icon" aria-hidden="true">↗</div>
+
+                    <h3>Analytics</h3>
+
+                    <p>Understand your performance.</p>
+
+                    <span>Item 02</span>
+
+                </article>
+
+
+                <article class="grid-item">
+
+                    <div class="grid-icon" aria-hidden="true">▤</div>
+
+                    <h3>Reports</h3>
+
+                    <p>Organize important information.</p>
+
+                    <span>Item 03</span>
+
+                </article>
+
+
+                <article class="grid-item">
+
+                    <div class="grid-icon" aria-hidden="true">♙</div>
+
+                    <h3>Users</h3>
+
+                    <p>Manage your community.</p>
+
+                    <span>Item 04</span>
+
+                </article>
+
+
+                <article class="grid-item">
+
+                    <div class="grid-icon" aria-hidden="true">⚙</div>
+
+                    <h3>Settings</h3>
+
+                    <p>Customize your workspace.</p>
+
+                    <span>Item 05</span>
+
+                </article>
+
+
+                <article class="grid-item">
+
+                    <div class="grid-icon" aria-hidden="true">?</div>
+
+                    <h3>Support</h3>
+
+                    <p>Find help when you need it.</p>
+
+                    <span>Item 06</span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TASK 3C: ANIMATIONS
+        ========================== -->
+
+        <section id="animation" class="animation-section">
+
+            <div class="section-heading">
+
+                <span class="section-number">03 / INTERACTION</span>
+
+                <h2>Bring Interfaces to Life.</h2>
+
+                <p>
+                    Small animations can make a website feel
+                    more engaging, interactive, and polished.
+                </p>
+
+            </div>
+
+
+            <div class="animation-wrapper">
+
+                <!-- Button animation -->
+
+                <article class="anim-box">
+
+                    <span class="demo-label">INTERACTION 01</span>
+
+                    <h3>Button Hover</h3>
+
+                    <p>Move your cursor over the button.</p>
+
+                    <button class="anim-btn" type="button">
+                        Hover Me <span aria-hidden="true">↗</span>
+                    </button>
+
+                    <small>transition + transform</small>
+
+                </article>
+
+
+                <!-- Card lift -->
+
+                <article class="anim-box">
+
+                    <span class="demo-label">INTERACTION 02</span>
+
+                    <h3>Card Lift</h3>
+
+                    <p>Hover over the card to lift it.</p>
+
+                    <div class="anim-card">
+                        <span aria-hidden="true">✦</span>
+                        <span>Lift Effect</span>
+                    </div>
+
+                    <small>translateY + box-shadow</small>
+
+                </article>
+
+
+                <!-- Loading spinner -->
+
+                <article class="anim-box">
+
+                    <span class="demo-label">INTERACTION 03</span>
+
+                    <h3>Loading Spinner</h3>
+
+                    <p>A continuous rotating animation.</p>
+
+                    <div
+                        class="spinner"
+                        role="img"
+                        aria-label="Decorative rotating loading spinner">
+                    </div>
+
+                    <small>@keyframes spin</small>
+
+                </article>
+
+
+                <!-- Fade-in -->
+
+                <article class="anim-box">
+
+                    <span class="demo-label">INTERACTION 04</span>
+
+                    <h3>Fade In</h3>
+
+                    <p>A smooth entrance using keyframes.</p>
+
+                    <div class="fade-box">
+                        Hello, CSS!
+                    </div>
+
+                    <small>opacity + keyframes</small>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CALL TO ACTION
+        ========================== -->
+
+        <section class="cta-section">
+
+            <div class="cta-content">
+
+                <p class="section-eyebrow">KEEP LEARNING</p>
+
+                <h2>Good design starts with the basics.</h2>
+
+                <p>
+                    Practice, experiment, and keep building.
+                    Every line of CSS is a step forward.
+                </p>
+
+                <a href="#home" class="hero-btn">
+                    Back to Top <span aria-hidden="true">↑</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <a href="#home" class="logo">
+            CSS<span>Challenge</span>
+        </a>
+
+        <p>
+            Built with HTML & CSS for WeIntern Week 1.
+        </p>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+
+            <a href="#home">Home</a>
+            <a href="#flexbox">Flexbox</a>
+            <a href="#grid">Grid</a>
+            <a href="#animation">Animations</a>
+
+        </nav>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 CSS Challenge. Made with
+                <span aria-label="love">♥</span>
+                and CSS.
+            </p>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>
+```
